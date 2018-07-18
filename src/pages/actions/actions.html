@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>
+        Actions
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <button ion-button (click)="onGoToPage(accountPage)">Account Information</button>
+    <hr>
+    <button ion-button (click)="onGotoPayment()">Payment</button>
+    <hr>
+    <button ion-button (click)="onGotoFeedback(feedbackPage)">Give us feedback</button>
+    <hr>
+    <button ion-button (click)="onGotoReport(reportPage)">Report a problem</button>
+  </ion-content>
